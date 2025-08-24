@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brats'n'Baddies
+    </title>
+</head>
+<body>
+    <h1>💖✨ Brats'n’Baddies: Nya Nya Totally!
+    </h1>
+    <p>💖✨ *Brats’n’Baddies: Nya Nya Totally!* is a glitter-drenched fever dream of Y2K bratcore energy, where attitude isn’t
+    optional—it’s the whole aesthetic. Think rhinestone crop tops, butterfly clips, and flip phones that snap shut with
+    drama. These baddies don’t just slay—they stomp through the scene with chunky platforms and unapologetic chaos. Every
+    pout, every pose, every “mahh” is a declaration of diva dominance. It’s a world where being extra is the baseline, and
+    “cute but psycho” is practically a love language. Nya nya? Totally.
+</p>
+<button onclick="ascending()"> Ascending order</button>
+<button onclick="descending()"> Descending order</button>
+<p id="result"></p>
+
+<script>
+    var points = [40, 45, 56, 78, 9, 68, 79, 23, 45, 76, 98,];
+    document.getElementById("result").innerHTML = points;
+
+    function ascending() {
+        points.sort(function(a, b){return a - b});
+        document.getElementById("result").innerHTML = points;
+    }
+    function descending() {
+        points.sort(function(a, b){return b - a});
+        document.getElementById("result").innerHTML = points;
+    }
+</script>
+</body>
+</html>
